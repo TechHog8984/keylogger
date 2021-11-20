@@ -42,8 +42,6 @@ if whitelistedkeys:
             method = 'down'
 
         if key and key in whitelistedkeys and method:
-            print(key, timesup.get(key))
-            print(key, timesdown.get(key))
             if not timesup.get(key):
                 timesup[key] = 0
             if not timesdown.get(key):
